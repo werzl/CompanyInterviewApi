@@ -1,6 +1,6 @@
 ﻿namespace Api;
 
-public class Company
+public class CompanyModel
 {
     public string Id { get; set; }
     public string CompanyName { get; set; }

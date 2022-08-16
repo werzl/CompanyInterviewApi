@@ -1,4 +1,4 @@
-﻿namespace Api.Controllers;
+﻿namespace Api.Commands;
 
 public interface ICommand<in TRequest>
 {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Api;
 using Api.Commands;
 using Api.Controllers;
+using Api.Storage;
 using Bogus;
 using Microsoft.Extensions.Logging.Abstractions;
 using Xunit;
@@ -12,14 +13,14 @@ public class BuyoutTests
 {
     private readonly Store _store;
     private readonly BuyoutCommand _classUnderTest;
-    private readonly Company _parentCompany;
-    private readonly Company _childCompany;
+    private readonly CompanyModel _parentCompany;
+    private readonly CompanyModel _childCompany;
 
     public BuyoutTests()
     {
         _parentCompany = CreateRandomCompany();
         _childCompany = CreateRandomCompany();
-        _store = new Store(new List<Company>
+        _store = new Store(new List<CompanyModel>
         {
             _parentCompany,
             _childCompany
@@ -60,9 +61,9 @@ public class BuyoutTests
         Assert.Contains(_parentCompany.CompanyName, _childCompany.CompanyName);
     }
 
-    private Company CreateRandomCompany()
+    private CompanyModel CreateRandomCompany()
     {
-        return new Faker<Company>()
+        return new Faker<CompanyModel>()
             .RuleFor(c => c.Id, f => f.Random.String(5))
             .RuleFor(c => c.CompanyName, f => f.Company.CompanyName())
             .RuleFor(c => c.ContactName, f => f.Name.FullName())

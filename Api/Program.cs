@@ -2,6 +2,7 @@ using System.Text.Json;
 using Api;
 using Api.Commands;
 using Api.Controllers;
+using Api.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var startingData = JsonSerializer.Deserialize<List<Company>>(File.ReadAllText("StartingData.json"), new JsonSerializerOptions
+var startingData = JsonSerializer.Deserialize<List<CompanyModel>>(File.ReadAllText("StartingData.json"), new JsonSerializerOptions
 {
     PropertyNameCaseInsensitive = true,
 });
