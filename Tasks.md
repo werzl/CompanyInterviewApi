@@ -15,6 +15,6 @@ The buyout command allows a company to purchase another. This is done by updatin
 Write failing tests to prove these cases are not covered and then make them pass by fixing the code.
 
 ## Reference
-- https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0
+- https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api
 - https://github.com/bchavez/Bogus
 - https://xunit.net/docs/getting-started/netcore/visual-studio
