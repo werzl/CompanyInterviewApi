@@ -60,7 +60,7 @@ namespace Tests
             Assert.Contains(_parentCompany.CompanyName, _childCompany.CompanyName);
         }
 
-        private CompanyModel CreateRandomCompany()
+        private static CompanyModel CreateRandomCompany()
         {
             return new Faker<CompanyModel>()
                 .RuleFor(c => c.Id, f => f.Random.String(5))
