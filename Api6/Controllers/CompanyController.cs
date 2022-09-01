@@ -25,7 +25,7 @@ namespace Api6.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             return Ok(_dataStore.GetAll());
         }
