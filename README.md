@@ -8,7 +8,7 @@ Run `dotnet --version` and open the sln file for the latest matching version
 # Tasks
 ## Api
 - Add an optional search parameter to the Get All endpoint based on a company's name. Users can pass a string and companies that have names which contain the string should be returned
-- 404 handler - Currently the Get Single Company crashes when given a company id that doesnt exist. This should return a 404
+- 404 handler - Currently the Get Single Company crashes when given a company id that doesn't exist. This should return a 404
 - Create Company - Add a new route to add a new company to the in memory store
 
 ## Tests
