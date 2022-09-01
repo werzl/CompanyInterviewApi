@@ -2,7 +2,7 @@
 Api for paired programming during interview process
 
 Multiple solutions are available for working in .NET 6, .NET 5 and .NET Core 3.1.
-Run `dotnet --version` and open the sln file for the lates matching version
+Run `dotnet --version` and open the sln file for the latest matching version
 
   
 # Tasks
