@@ -1,12 +1,13 @@
 # CompanyInterviewApi
 Api for paired programming during interview process
 
-Multiple solutions are available for working in .NET 6, .NET 5 and .NET Core 3.1
+Multiple solutions are available for working in .NET 6, .NET 5 and .NET Core 3.1.
+Run `dotnet --version` and open the sln file for the lates matching version
 
   
 # Tasks
 ## Api
-- Add a Company Name Filter to the Get All endpoint. Users can pass a string and companies that have names which contain the string should be returned
+- Add an optional search parameter to the Get All endpoint based on a company's name. Users can pass a string and companies that have names which contain the string should be returned
 - 404 handler - Currently the Get Single Company crashes when given a company id that doesnt exist. This should return a 404
 - Create Company - Add a new route to add a new company to the in memory store
 
