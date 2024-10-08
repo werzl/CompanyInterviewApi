@@ -1,10 +1,7 @@
 # CompanyInterviewApi
-Api for paired programming during interview process
+Api for paired programming during interview process.
+For the purposes of the demo any updates to data models do **NOT** need to be saved to disk.
 
-Multiple solutions are available for working in .NET 6, .NET 5 and .NET Core 3.1.
-Run `dotnet --version` and open the sln file for the latest matching version
-
-  
 # Tasks
 ## Buyout 
 The buyout command allows a company to purchase another. This is done by updating multiple fields on the child company.
